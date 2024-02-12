@@ -40,30 +40,38 @@
     </div>
   </nav>
   
-  <div id="about" class="container-fluid d-flex align-items-center">
+  <div id="about" class="mb-5 container-fluid d-flex justify-content-center align-items-center"> 
     <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <h1>About</h1>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-7 d-flex align-items-center">
-            <p>Hi, I am Ashley. Quisquam beatae ipsa illo nobis cupiditate odio, blanditiis impedit iure minima, 
-              doloremque reiciendis enim tempora neque a odit officia, veritatis ratione deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam beatae ipsa illo nobis cupiditate odio, blanditiis impedit iure minima, 
-              doloremque reiciendis enim tempora neque a odit officia, veritatis ratione deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam beatae ipsa illo nobis cupiditate odio, blanditiis impedit iure minima, 
-              doloremque reiciendis enim tempora neque a odit officia, veritatis ratione deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam beatae ipsa illo nobis cupiditate odio, blanditiis impedit iure minima, 
-              doloremque reiciendis enim tempora neque a odit officia, veritatis ratione deleniti. </p>
+      <div class="col-xl-10">
+        <h1 class="my-4">About</h1>
+        <div class="row">
+
+          
+          <div class="d-md-block d-lg-none col-12 col-md-3 text-center">
+            <img src="https://res.cloudinary.com/dntj9fnub/image/upload/v1707714752/Portfolio/avatar_sm_hrg01u.png" alt="">
           </div>
-          <div class="col-md-3 d-flex justify-content-center">
+          <div class="col-md-9 col-lg-8 text-center">
+            <p>Hi, I am Ashley, a junior web developer (<b>MERN stack</b>).</p>
+            <p>I started learning to code a while back, unaware of libraries and frameworks.</p>
+            <p>Not too long ago, I got in touch with <b>Bootstrap, Mongoose, Express, React, Node.js and Git</b> and they opened me to a world of possibilities and excitement! </p>
+            <p>Looking forward to diving deeper into the realms of a web developer and building more projects.</p>
+            <p>As an Engineer by training, it always intrigues me to learn how things work.</p>
+            <p>I hope that my persistence in life, together with my analytical and detail-oriented personality, will make me a good developer and team player.</p>
+          </div>
+
+          <div class="d-none d-lg-block col-lg-4 text-center">
             <img src="https://res.cloudinary.com/dntj9fnub/image/upload/w_300/v1707184701/Portfolio/avatar_zsp6ej.png" alt="contact">
           </div>
+
         </div>
       </div>  
     </div>
   </div>
   
-  <div id="projects" class="container-fluid d-flex align-items-center">
+  <div id="projects" class="mb-5 container-fluid d-flex align-items-center">
     <div class="row justify-content-center">
         
-        <h1 class="mb-4">Projects</h1>
+        <h1 class="my-4">Projects</h1>
         <div class="d-lg-flex justify-content-center">
           
           <div class="flex-lg-column col-lg-2 order-lg-2 d-grid gap-2 my-auto mt-0 d-md-inline-flex">
@@ -75,31 +83,83 @@
           <div class="col-lg-8">
             <div class="order-lg-1">
               
-              <div id="photoAlbum" class="card mb-3">
+              <div id="photoAlbum" class="card mb-5">
                 <div class="row g-0">
                   <div class="card-header">
                     Full-Stack Project
                   </div>
                   <div class="col-md-4">
                     <img src="https://res.cloudinary.com/dntj9fnub/image/upload/v1707377095/Portfolio/photoAlbum_terker.png" class="img-fluid rounded-start" alt="photo album">
-                    <h5>Express</h5>
-                    <h5>Mongoose</h5>
-                    <h5>Passport</h5>
-                    <h5>Cloudinary</h5>
+                    <div class="mt-2 ms-2">
+                      <h6>Building Blocks: </h6>
+                      <ul class="d-inline-flex me-2 d-md-block buildingBlocks">
+                        <li>
+                          <p class="card-text">Express</p>
+                        </li>
+                        <li>
+                          <p class="card-text">Mongoose</p>
+                        </li>
+                        <li>
+                          <p class="card-text">Passport</p>
+                        </li>
+                        <li>
+                          <p class="card-text">Cloudinary</p>
+                        </li>
+                        <li>
+                          <p class="card-text">MapBox</p>
+                        </li>
+                        <li>
+                          <p class="card-text">Bootstrap</p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Photo Album</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                      <p class="card-text"><small class="text-body-secondary">Project takes a while to load. Appreciate your patience. Thank you! &#128522</small></p>
+                      <p class="card-text">An Express application to upload / edit / delete photos & add / delete reviews belonging to you.</p>
+                      <p class="card-text"><b>TL;DR - Authentication, Authorization, Cloudinary, MapBox, Deployment</b></p>
+                      <p class="card-text">Hope you enjoy viewing it as much as I enjoyed building it!</p>
+                      <ul>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Front-end : Bootstrap styling, flash messages, stars rating for reviews</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Database : MongoDB & MongoDB Atlas</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Data modeling : Photo and Reviews (1-to-many relationship)</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Data validation : Bootstrap (front-end) & Joi (back-end)</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Passport.js : Register users, login, logout (Authentication required to add photos & reviews)</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Authorization : Users can only delete photos & reviews belonging to them</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Cloudinary : image storage & transformation</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">MapBox : forward geocoding & cluster map</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Simple Security measures</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Render : deployment</small></p>
+                        </li>
+                      </ul>
+                      <p class="card-text">Project takes a while to load. Appreciate your patience. Thank you! &#128522</p>
                       <a href="https://ashley-photo-album.onrender.com/" class="btn btn-primary" target="_blank">View Project</a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div id="museum" class="card mb-3">
+              <div id="museum" class="card mb-5">
                 <div class="row g-0">
                   <div class="card-header">
                     Front-End Bootstrap Project
@@ -110,21 +170,34 @@
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Museum of Food</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <p class="card-text">A responsive front-end Bootstrap website.</p>
+                      <ul>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">DOM event added to "color" Navbar on user scroll</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Branding and logo hidden for small screen sizes</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">Spacing and order of text and images swapped to facilitate stacking on small screen</small></p>
+                        </li>
+                        <li>
+                          <p class="card-text"><small class="text-body-secondary">OpenStreetMap added</small></p>
+                        </li>
+                      </ul>
                       <a href="https://museum-of-food.netlify.app/" class="btn btn-primary" target="_blank">View Project</a>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div id="project3" class="card mb-3">
+              <div id="project3" class="card mb-5">
                 <div class="row g-0">
                   <div class="card-header">
                     Project #3
                   </div>
                   <div class="col-md-4">
-                    <img src="" class="img-fluid rounded-start" alt="">
+                    <img src="https://res.cloudinary.com/dntj9fnub/image/upload/v1707377099/Portfolio/museumOfFood_px3kxg.png" class="img-fluid rounded-start" alt="">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -147,16 +220,14 @@
 
   <div id="contact" class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-lg-10">
+      <div class="col-12">
         <h1 class="my-4">Contact</h1>
         <div class="row d-flex justify-content-center">  
-          <div class="col-md-3 d-flex justify-content-center">
-            <img src="https://res.cloudinary.com/dntj9fnub/image/upload/v1707377093/Portfolio/emailPic_id5rig.png" alt="email">
+          <div class="col-12 col-lg-3 col-xxl-2 d-flex justify-content-center justify-content-lg-end">
+            <img src="https://res.cloudinary.com/dntj9fnub/image/upload/v1707714367/Portfolio/emailPic_sm_d9wrj6.png" alt="email">
           </div>
-          <div class="col-md-3 d-flex justify-content-center align-items-center">
+          <div class="col-12 col-lg-3 col-xxl-2 d-flex justify-content-center align-items-center">
             <p><b>Email:</b> ashleytanliling@gmail.com</p>
-            <p></p>
-            <p></p>
           </div>
         </div>
       </div>  
