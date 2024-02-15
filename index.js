@@ -23,9 +23,32 @@ for (let button of projectButtons) {
 function colorize() {
   const selectedProjectId = this.value;   //links this.btn to card
   document.querySelector(`#${selectedProjectId}`).style.display = "block";
+  document.querySelector(`#${selectedProjectId}`).classList.add("fadeIn");
   for (let project of projectList) {
     if (project !== selectedProjectId) {
       document.querySelector(`#${project}`).style.display = "none";
     }
   }
 }
+
+
+
+//  dark mode
+
+const darkMode = document.querySelector('.darkMode');
+
+darkMode.addEventListener("click", function() {
+  document.body.classList.toggle("darkMode");
+  if (darkMode.textContent === "Dark Mode") { 
+    darkMode.textContent = "Light Mode";
+  } else {
+    darkMode.textContent = "Dark Mode";
+  }
+}) 
+
+
+
+//  initialize Bootstrap Tooltip
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
