@@ -8,7 +8,8 @@
 }
 
 .darkMode #projects {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .darkMode .btn-outline-secondary {
@@ -35,7 +36,7 @@
 }
 
 @media (max-width: 991px) {
-  .darkMode .rounded-pill {   
+  .darkMode .rounded-pill {
     background-color: #37474f;
     color: #b0bec5;
   }
@@ -69,6 +70,15 @@ h1 {
   /* animation: 2s linear slidein; */
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(0.8);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #2c3e50;
+}
+
 /* @keyframes slidein {
   from {
     transform: translateX(-100%);
@@ -79,7 +89,6 @@ h1 {
   }
 } */
 
-
 #about {
   max-width: 90vw;
 }
@@ -89,8 +98,12 @@ h1 {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0.6; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #projects {
@@ -105,8 +118,12 @@ h1 {
   margin-bottom: 150px;
 }
 
-#photoAlbum {
+#happyCafe {
   display: block;
+}
+
+#photoAlbum {
+  display: none;
 }
 
 #museum {
@@ -115,6 +132,15 @@ h1 {
 
 #project3 {
   display: none;
+}
+
+@media (max-width: 1399px) {
+  #happyCafe .buildingBlocks {
+    list-style-type: none;
+  }
+  #happyCafe .buildingBlocks p {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 991px) {

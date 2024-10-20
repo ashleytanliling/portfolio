@@ -2,26 +2,22 @@
 
 const projects = document.querySelector("#projects");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   let offset = window.scrollY;
   projects.style.backgroundPositionY = offset * 0.7 + "px";
-})
-
-
+});
 
 //  click btn -> diplay project cards
 
-const projectList = [
-  "photoAlbum", "museum", "project3"
-];
+const projectList = ["happyCafe", "photoAlbum", "museum", "project3"];
 
-const projectButtons = document.querySelectorAll('button.projectBtn');
+const projectButtons = document.querySelectorAll("button.projectBtn");
 for (let button of projectButtons) {
-  button.addEventListener('click', colorize);
+  button.addEventListener("click", colorize);
 }
 
 function colorize() {
-  const selectedProjectId = this.value;   //links this.btn to card
+  const selectedProjectId = this.value; //links this.btn to card
   document.querySelector(`#${selectedProjectId}`).style.display = "block";
   document.querySelector(`#${selectedProjectId}`).classList.add("fadeIn");
   for (let project of projectList) {
@@ -31,24 +27,24 @@ function colorize() {
   }
 }
 
-
-
 //  dark mode
 
-const darkMode = document.querySelector('.darkMode');
+const darkMode = document.querySelector(".darkMode");
 
-darkMode.addEventListener("click", function() {
+darkMode.addEventListener("click", function () {
   document.body.classList.toggle("darkMode");
-  if (darkMode.textContent === "Dark Mode") { 
+  if (darkMode.textContent === "Dark Mode") {
     darkMode.textContent = "Light Mode";
   } else {
     darkMode.textContent = "Dark Mode";
   }
-}) 
-
-
+});
 
 //  initialize Bootstrap Tooltip
 
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
