@@ -79,6 +79,10 @@ h1 {
   background-color: #2c3e50;
 }
 
+#selenium .carousel-indicators [data-bs-target] {
+  background-color: red;
+}
+
 /* @keyframes slidein {
   from {
     transform: translateX(-100%);
@@ -118,8 +122,12 @@ h1 {
   margin-bottom: 150px;
 }
 
-#happyCafe {
+#selenium {
   display: block;
+}
+
+#happyCafe {
+  display: none;
 }
 
 #photoAlbum {

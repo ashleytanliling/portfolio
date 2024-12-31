@@ -9,7 +9,13 @@ window.addEventListener("scroll", function () {
 
 //  click btn -> diplay project cards
 
-const projectList = ["happyCafe", "photoAlbum", "museum", "project3"];
+const projectList = [
+  "selenium",
+  "happyCafe",
+  "photoAlbum",
+  "museum",
+  "project3",
+];
 
 const projectButtons = document.querySelectorAll("button.projectBtn");
 for (let button of projectButtons) {
